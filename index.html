@@ -3,460 +3,659 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekta Joshi | Data Analyst Portfolio</title>
+    <title>Ekta Joshi | Power BI Developer & Data Analyst | Mumbai</title>
+    <meta name="description" content="Ekta Joshi – Power BI Developer & Data Analyst in Mumbai. 6+ years experience in SQL, DAX, Power Query, Excel, Python. Open to Data Analyst, BI Analyst & Power BI Developer roles in Mumbai.">
+    <meta name="keywords" content="Power BI Developer Mumbai, Data Analyst Mumbai, BI Analyst Mumbai, SQL Analyst, DAX, Power Query, Excel Dashboard, Business Intelligence, Ekta Joshi">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#intro">Home</a></li>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="#intro" class="nav-logo">EJ<span class="dot">.</span></a>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://github.com/Ekta-Joshi-286" target="_blank">GitHub</a></li>
+            <li><a href="#contact" class="nav-cta">Hire Me</a></li>
         </ul>
-    </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mob-link">About</a>
+        <a href="#projects" class="mob-link">Projects</a>
+        <a href="#experience" class="mob-link">Experience</a>
+        <a href="#skills" class="mob-link">Skills</a>
+        <a href="#education" class="mob-link">Education</a>
+        <a href="#contact" class="mob-link">Contact</a>
+    </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section id="intro">
-        <div class="hero-content">
-            <h1>Hi, I'm Ekta Joshi</h1>
-            <h2>Turning Data into Decisions</h2>
-            <p>I transform complex datasets into clear business insights using SQL, Power BI, Excel, and Python. With 5+ years in web development, SEO analytics, and content strategy, I bring a unique perspective to data analysis—understanding both the technical implementation and the story behind the numbers.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+<!-- HERO -->
+<section id="intro">
+    <div class="hero-bg">
+        <div class="dots-overlay"></div>
+        <div class="hero-shape sh1"></div>
+        <div class="hero-shape sh2"></div>
+    </div>
+    <div class="hero-layout">
+        <!-- Left: Text -->
+        <div class="hero-text">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to Work &middot; Mumbai
+            </div>
+            <h1 class="hero-title">
+                <span class="line1">Ekta Joshi</span>
+                <span class="line2">Power BI Developer</span>
+                <span class="line3">&amp; Data Analyst</span>
+            </h1>
+            <p class="hero-sub">6+ years across SEO &amp; content analytics, dashboard/report development, and web &amp; software development — SQL · Power BI · DAX · Excel · Python</p>
+            <div class="hero-stats">
+                <div class="stat"><span class="num">6+</span><span class="label">Years Exp.</span></div>
+                <div class="stat-div"></div>
+                <div class="stat"><span class="num stat-text">India · USA · UK · UAE</span><span class="label">Clients Served</span></div>
+                <div class="stat-div"></div>
+                <div class="stat"><span class="num">25%</span><span class="label">Traffic Growth</span></div>
+            </div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-main">View My Work</a>
+                <a href="#contact" class="btn-outline">Get In Touch</a>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title">About</h2>
-        <div class="about-content">
-            <p>I am a Data Analyst with hands-on experience in SQL, Power BI, Excel, and Python, specializing in transforming business and digital data into actionable insights through dashboards, reporting, and exploratory data analysis.</p>
-            
-            <p>My journey combines 5+ years of experience in web development, SEO analytics, and content performance analysis with my current focus on data analytics. This unique background allows me to approach data problems with both technical expertise and business acumen.</p>
-            
-            <p>I have worked on diverse projects, including company sales prediction, Netflix content performance analysis, neural network regression models for energy prediction, HR analytics dashboards, sales forecasting, and social media performance tracking. I’m passionate about using data to drive informed business decisions and solve real-world problems.</p>
-        </div>
+        <!-- Right: Live Dashboard Visual -->
+        <div class="hero-visual">
+            <div class="dashboard-card">
+                <div class="dash-header">
+                    <div class="dash-title">
+                        <span class="dash-dot red"></span>
+                        <span class="dash-dot yellow"></span>
+                        <span class="dash-dot green"></span>
+                        <span class="dash-label">Healthcare Analytics Dashboard</span>
+                    </div>
+                    <span class="dash-badge live"><span class="live-dot"></span>Live</span>
+                </div>
 
-        <div class="about-content">
-            <div class="skills-overview">
-                <div class="skill-box">
-                    <h3>💻 Programming & Query Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-badge">SQL</span>
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">PHP</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">C#/.NET</span>
+                <!-- KPI row -->
+                <div class="kpi-row">
+                    <div class="kpi kpi-blue">
+                        <div class="kpi-icon">🏥</div>
+                        <div class="kpi-val">8,450</div>
+                        <div class="kpi-label">Total Patients</div>
+                        <div class="kpi-change up">↑ 6.2%</div>
+                    </div>
+                    <div class="kpi kpi-teal">
+                        <div class="kpi-icon">📅</div>
+                        <div class="kpi-val">1,320</div>
+                        <div class="kpi-label">Appointments</div>
+                        <div class="kpi-change up">↑ 9.4%</div>
+                    </div>
+                    <div class="kpi kpi-amber">
+                        <div class="kpi-icon">💰</div>
+                        <div class="kpi-val">₹62.5L</div>
+                        <div class="kpi-label">Revenue</div>
+                        <div class="kpi-change up">↑ 4.7%</div>
                     </div>
                 </div>
-                <div class="skill-box">
-                    <h3>📊 Data Analysis & BI Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-badge">Power BI</span>
-                        <span class="skill-badge">Excel</span>
-                        <span class="skill-badge">Google Analytics</span>
-                        <span class="skill-badge">Search Console</span>
+
+                <!-- Bar chart -->
+                <div class="chart-section">
+                    <div class="chart-title">Monthly Patient Visits</div>
+                    <div class="bar-chart">
+                        <div class="bar-group">
+                            <div class="bar-wrap"><div class="bar-fill" style="--h:55%"></div></div>
+                            <span>Jan</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-wrap"><div class="bar-fill" style="--h:68%"></div></div>
+                            <span>Feb</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-wrap"><div class="bar-fill" style="--h:45%"></div></div>
+                            <span>Mar</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-wrap"><div class="bar-fill" style="--h:82%"></div></div>
+                            <span>Apr</span>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-wrap"><div class="bar-fill" style="--h:76%"></div></div>
+                            <span>May</span>
+                        </div>
+                        <div class="bar-group active">
+                            <div class="bar-wrap"><div class="bar-fill" style="--h:92%"></div></div>
+                            <span>Jun</span>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-box">
-                    <h3>🐍 Python Libraries</h3>
-                    <div class="skill-tags">
-                        <span class="skill-badge">Pandas</span>
-                        <span class="skill-badge">NumPy</span>
-                        <span class="skill-badge">Matplotlib</span>
-                        <span class="skill-badge">Seaborn</span>
-                        <span class="skill-badge">Scikit-learn</span>
-                        <span class="skill-badge">Keras</span>
+
+                <!-- Mini donut + line -->
+                <div class="chart-row2">
+                    <div class="donut-section">
+                        <div class="chart-title">Patient Mix</div>
+                        <div class="donut-wrap">
+                            <svg viewBox="0 0 80 80" class="donut-svg">
+                                <circle cx="40" cy="40" r="28" fill="none" stroke="#e5e7eb" stroke-width="14"/>
+                                <circle cx="40" cy="40" r="28" fill="none" stroke="#2563eb" stroke-width="14" stroke-dasharray="70 106" stroke-dashoffset="21" class="donut-seg1"/>
+                                <circle cx="40" cy="40" r="28" fill="none" stroke="#0d9488" stroke-width="14" stroke-dasharray="42 134" stroke-dashoffset="-49" class="donut-seg2"/>
+                                <circle cx="40" cy="40" r="28" fill="none" stroke="#f59e0b" stroke-width="14" stroke-dasharray="25 151" stroke-dashoffset="-91" class="donut-seg3"/>
+                            </svg>
+                            <div class="donut-legend">
+                                <span class="dl blue">New Patients</span>
+                                <span class="dl teal">Returning</span>
+                                <span class="dl amber">Referrals</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-box">
-                    <h3>🎯 Core Competencies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-badge">Data Cleaning</span>
-                        <span class="skill-badge">EDA</span>
-                        <span class="skill-badge">Data Transformation</span>
-                        <span class="skill-badge">Dashboarding</span>
+                    <div class="sparkline-section">
+                        <div class="chart-title">Recovery Rate Trend</div>
+                        <svg viewBox="0 0 160 60" class="sparkline">
+                            <defs>
+                                <linearGradient id="spGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#2563eb" stop-opacity="0.2"/>
+                                    <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M0,48 L26,38 L52,42 L78,22 L104,28 L130,14 L160,8" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" class="spark-line"/>
+                            <path d="M0,48 L26,38 L52,42 L78,22 L104,28 L130,14 L160,8 L160,60 L0,60 Z" fill="url(#spGrad)" class="spark-fill"/>
+                        </svg>
+                        <div class="spark-stat">+18% <span>vs last quarter</span></div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="section-title">Experience</h2>
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-photo-col">
+               
+                <div class="about-tags">
+                    <span class="tag">📍 Mumbai, India</span>
+                    <span class="tag">💼 Available Now</span>
+                    <span class="tag">🎓 MSc. Computer Science</span>
+                </div>
+            </div>
+            <div class="about-text-col">
+                <div class="section-label">Who I Am</div>
+                <h2 class="section-heading">Power BI Developer who turns data into<br><em>decisions that matter</em></h2>
+                <p>I am a <strong>Power BI Developer and Data Analyst</strong> based in Mumbai with 6+ years of experience spanning business intelligence, SEO analytics, and web development. I build end-to-end BI solutions — from SQL data extraction to interactive dashboards that drive measurable business outcomes.</p>
+                <p>My edge: I understand <em>both</em> the data and the business context behind it. Having worked across e-commerce, healthcare, HR, fintech, and digital marketing, I translate complex datasets into KPIs and visual stories stakeholders trust and act on.</p>
+                <p>Currently seeking <strong>Power BI Developer, Data Analyst, or BI Analyst roles in Mumbai</strong> where I can deliver scalable reporting solutions and actionable insights.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="h-icon">📊</div>
+                        <div>
+                            <strong>Power BI & DAX</strong>
+                            <span>End-to-end dashboards with RLS, drill-through & dynamic KPIs</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="h-icon">🗄️</div>
+                        <div>
+                            <strong>SQL & Data Modelling</strong>
+                            <span>CTEs, window functions, stored procedures, query optimisation</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="h-icon">📑</div>
+                        <div>
+                            <strong>Excel & Python Analytics</strong>
+                            <span>Advanced dashboards, EDA, forecasting, Pandas, Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-overview-grid">
+            <div class="skill-box">
+                <div class="sb-icon">🗄️</div>
+                <h3>SQL & Databases</h3>
+                <div class="skill-tags">
+                    <span class="sk">CTEs</span><span class="sk">Window Functions</span><span class="sk">Stored Procedures</span><span class="sk">Views</span><span class="sk">Joins & Subqueries</span><span class="sk">Query Optimisation</span><span class="sk">SQL Server</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="sb-icon">📊</div>
+                <h3>Power BI & BI Tools</h3>
+                <div class="skill-tags">
+                    <span class="sk">DAX</span><span class="sk">Power Query (M)</span><span class="sk">Data Modelling</span><span class="sk">RLS</span><span class="sk">Drill-through</span><span class="sk">KPI Cards</span><span class="sk">Google Analytics</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="sb-icon">📑</div>
+                <h3>Excel & Reporting</h3>
+                <div class="skill-tags">
+                    <span class="sk">Pivot Tables</span><span class="sk">XLOOKUP</span><span class="sk">INDEX-MATCH</span><span class="sk">Power Query</span><span class="sk">Power Pivot</span><span class="sk">Conditional Formatting</span><span class="sk">Dashboarding</span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="sb-icon">🐍</div>
+                <h3>Python & Analytics</h3>
+                <div class="skill-tags">
+                    <span class="sk">Pandas</span><span class="sk">NumPy</span><span class="sk">Matplotlib</span><span class="sk">Seaborn</span><span class="sk">Scikit-learn</span><span class="sk">EDA</span><span class="sk">Forecasting</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <div class="section-label center">What I've Built</div>
+        <h2 class="section-heading center">Featured Projects</h2>
+
+        <div class="projects-featured">
+            <div class="proj-card">
+                <div class="proj-header teal">
+                    <div class="proj-type">Power BI · DAX · Power Query</div>
+                    <div class="proj-icon-large">📊</div>
+                </div>
+                <div class="proj-body">
+                    <h3>E-Commerce Sales &amp; Customer Segmentation Dashboard</h3>
+                    <p>End-to-end Power BI solution with <strong>RFM analysis</strong> to segment customers into high-value and churn-risk groups. Dynamic DAX measures for KPIs and Power Query pipelines for data transformation.</p>
+                    <div class="proj-impact">
+                        <span class="impact-item">✅ RFM Customer Segmentation</span>
+                        <span class="impact-item">✅ Revenue &amp; SKU Drill-through</span>
+                        <span class="impact-item">✅ Regional Performance Maps</span>
+                    </div>
+                    <div class="proj-tags"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>RFM Analysis</span><span>Data Modelling</span></div>
+                    <a href="https://github.com/Ekta-Joshi-286/ecommerce-rfm-powerbi-dashboard" target="_blank" class="proj-link">View on GitHub →</a>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-header navy">
+                    <div class="proj-type">Power BI · Advanced SQL · DAX</div>
+                    <div class="proj-icon-large">🏥</div>
+                </div>
+                <div class="proj-body">
+                    <h3>Healthcare Analytics Dashboard (8-Page BI Report)</h3>
+                    <p>8-page healthcare analytics report tracking patient metrics, appointment trends, revenue, treatment outcomes, and acquisition KPIs. Built star schema data models and interactive filters.</p>
+                    <div class="proj-impact">
+                        <span class="impact-item">✅ 8-Page Interactive Report</span>
+                        <span class="impact-item">✅ Patient &amp; Revenue KPIs</span>
+                        <span class="impact-item">✅ Star Schema Data Model</span>
+                    </div>
+                    <div class="proj-tags"><span>Power BI</span><span>Advanced SQL</span><span>DAX</span><span>KPI Reporting</span><span>Data Modelling</span></div>
+                    <a href="https://github.com/Ekta-Joshi-286/healthcare-analytics-dashboard" target="_blank" class="proj-link">View on GitHub →</a>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-header amber">
+                    <div class="proj-type">Python · Pandas · NumPy · Seaborn · Streamlit</div>
+                    <div class="proj-icon-large">📣</div>
+                </div>
+                <div class="proj-body">
+                    <h3>Marketing Campaign Performance Analytics Dashboard</h3>
+                    <p>Built a multi-page analytics dashboard analysing <strong>50K+ marketing records</strong>, tracking KPIs including Revenue, ROI, CTR, and Conversion Rate using Python, Pandas, and Matplotlib.</p>
+                    <div class="proj-impact">
+                        <span class="impact-item">✅ 50K+ Records Analysed</span>
+                        <span class="impact-item">✅ Campaign, Channel &amp; Funnel Analysis</span>
+                        <span class="impact-item">✅ Regional Segment Insights</span>
+                    </div>
+                    <div class="proj-tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Seaborn</span><span>Streamlit</span></div>
+                    <a href="https://github.com/Ekta-Joshi-286/marketing-campaign-performance-analytics" target="_blank" class="proj-link">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="sub-heading">More Projects</h3>
+        <div class="projects-grid-small">
+            <div class="proj-small">
+                <div class="ps-icon">👥</div>
+                <h4>HR Executive Analytics Dashboard</h4>
+                <p>Power BI dashboard tracking attrition rates, recruitment pipeline, and workforce demographics using DAX and Power Query.</p>
+                <div class="proj-tags small"><span>Power BI</span><span>DAX</span><span>HR Analytics</span></div>
+                <a href="https://github.com/Ekta-Joshi-286" target="_blank" class="proj-link sm">View →</a>
+            </div>
+            <div class="proj-small">
+                <div class="ps-icon">🏪</div>
+                <h4>Company Sales Prediction</h4>
+                <p>Random Forest classification to identify high-sales drivers using retail data with comprehensive EDA.</p>
+                <div class="proj-tags small"><span>Python</span><span>Random Forest</span><span>Scikit-learn</span></div>
+                <a href="https://github.com/Ekta-Joshi-286/company-sales-prediction--random-forest" target="_blank" class="proj-link sm">View →</a>
+            </div>
+            <div class="proj-small">
+                <div class="ps-icon">🎬</div>
+                <h4>Netflix Content Performance Analysis</h4>
+                <p>EDA on Netflix dataset to uncover content trends, genre performance, and regional preferences.</p>
+                <div class="proj-tags small"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+                <a href="https://github.com/Ekta-Joshi-286" target="_blank" class="proj-link sm">View →</a>
+            </div>
+            <div class="proj-small">
+                <div class="ps-icon">⚡</div>
+                <h4>Energy Prediction – Neural Network</h4>
+                <p>Regression model using neural networks to forecast energy consumption with high accuracy.</p>
+                <div class="proj-tags small"><span>Python</span><span>Keras</span><span>NumPy</span></div>
+                <a href="https://github.com/Ekta-Joshi-286" target="_blank" class="proj-link sm">View →</a>
+            </div>
+            <div class="proj-small">
+                <div class="ps-icon">🎯</div>
+                <h4>ML Clustering Projects</h4>
+                <p>K-Means and Hierarchical Clustering for customer segmentation and pattern recognition.</p>
+                <div class="proj-tags small"><span>Python</span><span>K-Means</span><span>Clustering</span></div>
+                <a href="https://github.com/Ekta-Joshi-286/ML-Clustering-Projects-" target="_blank" class="proj-link sm">View →</a>
+            </div>
+            <div class="proj-small">
+                <div class="ps-icon">🍽️</div>
+                <h4>Eating Out Habits Analysis</h4>
+                <p>Excel dashboard exploring spending patterns and health impact using survey data.</p>
+                <div class="proj-tags small"><span>Excel</span><span>Dashboard</span><span>Statistics</span></div>
+                <a href="https://github.com/Ekta-Joshi-286/eating-out-habits-health-impact-analysis" target="_blank" class="proj-link sm">View →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <div class="container">
+        <div class="section-label center">Where I've Worked</div>
+        <h2 class="section-heading center">Professional Experience</h2>
         <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="company-logo">📊</div>
-                    <h3>Content Writer / SEO Executive</h3>
-                    <h4>360Degree Digital Marketing — Mumbai</h4>
-                    <p class="duration">Jan 2024 – Dec 2025</p>
-                    <ul>
-                        <li>Written and analyzed performance of 500+ articles for India, USA, UK, and UAE markets</li>
-                        <li>Tracked traffic, CTR, engagement, and rankings using Google Analytics & Search Console</li>
-                        <li>Identified data trends and performance gaps to support content decisions</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Google Analytics</span>
-                        <span class="tech-tag">Search Console</span>
-                        <span class="tech-tag">Data Analysis</span>
+
+            <div class="tl-item">
+                <div class="tl-left"><div class="tl-year">Jan 2024<br>Feb 2026</div></div>
+                <div class="tl-dot"></div>
+                <div class="tl-right">
+                    <div class="tl-card">
+                        <div class="tl-top">
+                            <div>
+                                <h3>SEO Analyst &amp; Content Writer</h3>
+                                <h4>360Degree Digital Marketing &middot; Mumbai (Remote)</h4>
+                            </div>
+                            <span class="tl-badge">Analytics & BI</span>
+                        </div>
+                        <ul>
+                            <li>Designed and developed interactive Power BI dashboards to track KPIs including CTR, bounce rate, organic traffic, and keyword rankings, enabling stakeholders to monitor performance and optimize campaigns.</li>
+                            <li>Analyzed large keyword, traffic, and search performance datasets to identify growth opportunities, resulting in first-page rankings for 100+ target keywords across India, USA, UK, and UAE markets.</li>
+                            <li>Performed competitor and keyword gap analysis using data insights, contributing to a 25% improvement in search rankings across key pages. </li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Power BI</span><span>DAX</span><span>Google Analytics</span><span>Search Console</span><span>Excel</span><span>SEO Analytics</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="company-logo">🔍</div>
-                    <h3>SEO Executive</h3>
-                    <h4>3D Marketing Consultancy — Mumbai</h4>
-                    <p class="duration">Jun 2023 – Nov 2023</p>
-                    <ul>
-                        <li>Performed data analysis on traffic, bounce rate, and ranking improvements</li>
-                        <li>Built weekly Excel dashboards to track traffic, bounce rate, and ranking improvements for SEO campaigns</li>
-                        <li>Identified SEO gaps through data-driven audits and implemented optimization strategies</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Excel</span>
-                        <span class="tech-tag">SEO Analytics</span>
-                        <span class="tech-tag">Dashboard</span>
+            <div class="tl-item">
+                <div class="tl-left"><div class="tl-year">Jun 2023<br>Dec 2023</div></div>
+                <div class="tl-dot"></div>
+                <div class="tl-right">
+                    <div class="tl-card">
+                        <div class="tl-top">
+                            <div>
+                                <h3>SEO Executive</h3>
+                                <h4>3D Marketing Consultancy &middot; Mumbai (Remote)</h4>
+                            </div>
+                            <span class="tl-badge">Analytics</span>
+                        </div>
+                        <ul>
+                            <li>Conducted technical audits, competitor analysis, and keyword research to identify growth opportunities</li>
+                            <li>Built performance-tracking dashboards in Excel to monitor rankings, traffic, and engagement metrics</li>
+                            <li>Wrote and optimised on-page content — headings, meta descriptions, landing page copy — to improve click-through rates</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Excel Dashboards</span><span>SEO Analytics</span><span>Keyword Research</span><span>Reporting</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="company-logo">💻</div>
-                    <h3>Software Developer / Content Writer</h3>
-                    <h4>Digital Info Analytics — Pune</h4>
-                    <p class="duration">Jan 2023 – Jun 2023</p>
-                    <ul>
-                        <li>Worked with SQL databases for feature development using PHP, JS, and .NET</li>
-                        <li>Created technical documentation and content based on structured data research</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">.NET</span>
+            <!-- Earlier Career -->
+            <div class="tl-item earlier-career">
+                <div class="tl-left"><div class="tl-year">Earlier<br>Career</div></div>
+                <div class="tl-dot tl-dot-sm"></div>
+                <div class="tl-right">
+                    <div class="tl-card earlier-card">
+                        <div class="earlier-label">Web Development &amp; SEO</div>
+                        <div class="earlier-list">
+                            <div class="earlier-item">
+                                <div class="ei-meta">
+                                    <strong>Web Designer / Writer</strong>
+                                    <span>Digital Info Analytics, Pune &middot; Jan–Jun 2023</span>
+                                </div>
+                                <p>Feature development and database work using SQL and .NET; technical documentation writing.</p>
+                            </div>
+                            <div class="earlier-item">
+                                <div class="ei-meta">
+                                    <strong>Freelance SEO &amp; Content Writer</strong>
+                                    <span>Jan 2020 – Dec 2022</span>
+                                </div>
+                                <p>Worked independently across multiple clients — SEO content, keyword research, on-page optimisation; delivered website copy, product descriptions, and long-form articles across finance, technology, and lifestyle niches.</p>
+                            </div>
+                            <div class="earlier-item">
+                                <div class="ei-meta">
+                                    <strong>Web Developer</strong>
+                                    <span>Eminent Risk Advisory, Mumbai &middot; Apr 2019 – Jan 2020</span>
+                                </div>
+                                <p>Developed and maintained internal tools and client-facing websites.</p>
+                            </div>
+                            <div class="earlier-item">
+                                <div class="ei-meta">
+                                    <strong>Web Designer</strong>
+                                    <span>Optimum Financial Solutions, Mumbai &middot; May 2014 – Apr 2015</span>
+                                </div>
+                                <p>Built modules for a Financial Management Software System; developed and maintained WordPress sites.</p>
+                            </div>
+                            <div class="earlier-item">
+                                <div class="ei-meta">
+                                    <strong>Web / Software Developer</strong>
+                                    <span>CIMS Hospital, Ahmedabad &middot; Jan 2012 – Jun 2013</span>
+                                </div>
+                                <p>Developed and maintained the hospital website; contributed to an internal Hospital Management System; managed website content and social media updates.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="company-logo">🌐</div>
-                    <h3>Web Developer</h3>
-                    <h4>Eminent Risk Advisory — Mumbai</h4>
-                    <p class="duration">Apr 2019 – Jan 2020</p>
-                    <ul>
-                        <li>Developed internal tools for LIC workflows and monitored performance using log data</li>
-                        <li>Created data-backed reports to improve workflow efficiency</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Web Development</span>
-                        <span class="tech-tag">Data Reporting</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="company-logo">💼</div>
-                    <h3>Web Designer</h3>
-                    <h4>Optimum Financial Solutions — Mumbai</h4>
-                    <p class="duration">May 2014 – Jan 2015</p>
-                    <ul>
-                        <li>Developed modules for a Financial Management Software System using JavaScript, .NET, and SQL</li>
-                        <li>Developed and maintained websites using HTML, CSS, JavaScript, and WordPress</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">WordPress</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <div class="company-logo">🏥</div>
-                    <h3>Web / Software Developer</h3>
-                    <h4>CIMS Hospital — Ahmedabad</h4>
-                    <p class="duration">Jan 2012 – Jun 2013</p>
-                    <ul>
-                        <li>Developed the CIMS Hospital website and Hospital Management System using PHP, SQL, JavaScript</li>
-                        <li>Performed website testing, troubleshooting, and optimization to ensure smooth functionality</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon">📊</div>
-                <div class="project-content">
-                    <h3>Sales Analysis & Forecasting Dashboard</h3>
-                    <p>Designed Power BI dashboard for Sales KPIs, revenue trends, and YoY comparison with forecasting analytics.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Power BI</span>
-                        <span class="tech-tag">DAX</span>
-                        <span class="tech-tag">Data Modeling</span>
-                    </div>
-		  <a href="https://github.com/Ekta-Joshi-286/HR-Dashboard-Project" target="_blank" class="project-link">View Project →</a>
-
-                </div>
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+        <div class="section-label center">My Toolkit</div>
+        <h2 class="section-heading center">Technical Skills</h2>
+        <div class="skills-list-grid">
+            <div class="skill-list-card">
+                <div class="slc-icon">📊</div>
+                <h3>Power BI &amp; BI</h3>
+                <ul>
+                    <li>DAX</li>
+                    <li>Power Query (M)</li>
+                    <li>Data Modelling</li>
+                    <li>Row-Level Security</li>
+                    <li>Drill-through &amp; KPI Cards</li>
+                </ul>
             </div>
-
-            <div class="project-card">
-                <div class="project-icon">👥</div>
-                <div class="project-content">
-                    <h3>HR Executive Dashboard</h3>
-                    <p>Created HR dashboard tracking attrition, hiring funnel, and workforce demographics with Power Query for data cleaning.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Power BI</span>
-                        <span class="tech-tag">Power Query</span>
-                        <span class="tech-tag">HR Analytics</span>
-                    </div>
-                    <a href="https://github.com/Ekta-Joshi-286/HR-Dashboard-Project" target="_blank" class="project-link">View Project →</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">💼</div>
-                <div class="project-content">
-                    <h3>LinkedIn Post Performance Dashboard</h3>
-                    <p>Analyzed impressions, engagement, and follower growth using SQL queries and Power BI visualizations with country-wise distribution.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">Power BI</span>
-                        <span class="tech-tag">Analytics</span>
-                    </div>
- <a href="https://www.linkedin.com/posts/ekta-joshi-data-analyst_power-bi-sql-dashboard-project-activity-7412153666683527168-67LL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpK0nIBPEkHI0oWOxGtqOTM6dDla4LdopM" target="_blank" class="project-link">View Project →</a>
-
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">🧠</div>
-                <div class="project-content">
-                    <h3>Neural Network Energy Prediction</h3>
-                    <p>Neural Network regression project using Keras to predict Turbine Energy Yield based on ambient environmental conditions.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">TensorFlow</span>
-                    </div>
-                    <a href="https://github.com/Ekta-Joshi-286/neural-network-turbine-energy-prediction" target="_blank" class="project-link">View Project →</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">🎬</div>
-                <div class="project-content">
-                    <h3>Netflix Content Analysis</h3>
-                    <p>Exploratory Data Analysis of Netflix's content library spanning 24 years, analyzing genre trends, country-wise production patterns, and content distribution strategies across movies and shows.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas </span>
-                        <span class="tech-tag">Matplotlib </span>
-			<span class="tech-tag">Seaborn  </span>
-                    </div>
-<a href="https://www.linkedin.com/posts/ekta-joshi-data-analyst_netflix-exploratory-data-analysis-using-python-activity-7416219711581048832-7ru5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpK0nIBPEkHI0oWOxGtqOTM6dDla4LdopM" target="_blank" class="project-link">View Project →</a>
-
-              </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">💻</div>
-                <div class="project-content">
-                    <h3>Company Sales Prediction</h3>
-                    <p>Random Forest classification to identify key factors driving high sales using retail data with comprehensive EDA.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Random Forest</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                    </div>
-                    <a href="https://github.com/Ekta-Joshi-286/company-sales-prediction--random-forest" target="_blank" class="project-link">View Project →</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">🎯</div>
-                <div class="project-content">
-                    <h3>ML Clustering Projects</h3>
-                    <p>Machine Learning projects using K-Means and Hierarchical Clustering for pattern recognition and data segmentation.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">K-Means</span>
-                        <span class="tech-tag">Clustering</span>
-                    </div>
-                    <a href="https://github.com/Ekta-Joshi-286/ML-Clustering-Projects-" target="_blank" class="project-link">View Project →</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">🍽️</div>
-                <div class="project-content">
-                    <h3>Eating Out Habits Analysis</h3>
-                    <p>Excel-based analysis exploring eating-out habits, spending patterns, and health impact using survey data and dashboards.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Excel</span>
-                        <span class="tech-tag">Statistics</span>
-                        <span class="tech-tag">Dashboard</span>
-                    </div>
-                    <a href="https://github.com/Ekta-Joshi-286/eating-out-habits-health-impact-analysis" target="_blank" class="project-link">View Project →</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon">📱</div>
-                <div class="project-content">
-                    <h3>Screen Time Survey Analysis</h3>
-                    <p>Excel dashboard analyzing screen time habits across age groups, devices, and lifestyle impact in digital families.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Excel</span>
-                        <span class="tech-tag">Dashboard</span>
-                        <span class="tech-tag">Analytics</span>
-                    </div>
-                    <a href="https://github.com/Ekta-Joshi-286/family-screen-time-survey-analysis" target="_blank" class="project-link">View Project →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <div class="skill-icon">🐍</div>
-                <h3>Python</h3>
-            </div>
-            <div class="skill-item">
-                <div class="skill-icon">📊</div>
-                <h3>Power BI</h3>
-            </div>
-            <div class="skill-item">
-                <div class="skill-icon">📑</div>
-                <h3>Excel</h3>
-            </div>
-            <div class="skill-item">
-                <div class="skill-icon">🗄️</div>
+            <div class="skill-list-card">
+                <div class="slc-icon">🗄️</div>
                 <h3>SQL</h3>
+                <ul>
+                    <li>CTEs &amp; Window Functions</li>
+                    <li>Stored Procedures &amp; Views</li>
+                    <li>Query Optimisation</li>
+                    <li>Joins &amp; Subqueries</li>
+                    <li>SQL Server</li>
+                </ul>
             </div>
-           
-            <div class="skill-item">
-                <div class="skill-icon">📈</div>
-                <h3>Data Visualization</h3>
+            <div class="skill-list-card">
+                <div class="slc-icon">📑</div>
+                <h3>Excel</h3>
+                <ul>
+                    <li>Pivot Tables &amp; Power Pivot</li>
+                    <li>XLOOKUP / INDEX-MATCH</li>
+                    <li>Dashboard Development</li>
+                    <li>Power Query</li>
+                    <li>Conditional Formatting</li>
+                </ul>
             </div>
-            <div class="skill-item">
-                <div class="skill-icon">🧮</div>
-                <h3>Statistics</h3>
+            <div class="skill-list-card">
+                <div class="slc-icon">🐍</div>
+                <h3>Python</h3>
+                <ul>
+                    <li>Pandas &amp; NumPy</li>
+                    <li>Matplotlib &amp; Seaborn</li>
+                    <li>EDA &amp; Data Wrangling</li>
+                    <li>Scikit-learn</li>
+                    <li>Forecasting</li>
+                </ul>
             </div>
-            <div class="skill-item">
-                <div class="skill-icon">🐼</div>
-                <h3>Pandas & NumPy</h3>
-            </div>
-
-		<div class="skill-item">
-                <div class="skill-icon">📉</div>
-                <h3>MatplotLib & Seaborn</h3>
-            </div>
-	 <div class="skill-item">
-                <div class="skill-icon">🤖</div>
-                <h3>Machine Learning</h3>
-            </div>
-	 <div class="skill-item">
-                <div class="skill-icon">🧠</div>
-                <h3>Generative AI</h3>
-            </div>
-	  <div class="skill-item">
-                <div class="skill-icon">🌐</div>
-                <h3>HTML & CSS</h3>
-            </div>
-	
-	<div class="skill-item">
-                <div class="skill-icon">⚙️</div>
-                <h3>PHP & WordPress</h3>
-            </div>
-
         </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="education-grid">
-            <div class="education-card">
-                <div class="education-icon">🎓</div>
-                <h3>Masters in Data Analytics & Data Science with Gen AI</h3>
+        <div class="domain-grid">
+            <div class="domain-card"><div class="dc-icon">🛒</div><span>E-Commerce Analytics</span></div>
+            <div class="domain-card"><div class="dc-icon">🏥</div><span>Healthcare Analytics</span></div>
+            <div class="domain-card"><div class="dc-icon">👥</div><span>HR Analytics</span></div>
+            <div class="domain-card"><div class="dc-icon">💰</div><span>Financial Analytics</span></div>
+            <div class="domain-card"><div class="dc-icon">📣</div><span>Marketing Analytics</span></div>
+            <div class="domain-card"><div class="dc-icon">🌐</div><span>SEO &amp; Digital Analytics</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <div class="container">
+        <div class="section-label center">Academic Background</div>
+        <h2 class="section-heading center">Education &amp; Certifications</h2>
+        <div class="edu-grid">
+            <div class="edu-card highlight-edu">
+                <div class="edu-year">2025</div>
+                <div class="edu-icon">🎓</div>
+                <h3>Masters Program – Data Analytics &amp; Data Science with Gen AI</h3>
                 <h4>Top Mentor, Pune</h4>
-                <p class="year">2025</p>
+                <p>SQL · Power BI · Python · Machine Learning · Generative AI · Business Intelligence</p>
+                <div class="edu-badge">Latest Qualification</div>
             </div>
-            <div class="education-card">
-                <div class="education-icon">🎓</div>
+            <div class="edu-card">
+                <div class="edu-year">2012</div>
+                <div class="edu-icon">🎓</div>
                 <h3>MSc. Computer Science</h3>
                 <h4>Ganpat University, Gujarat</h4>
-                <p class="year">2012</p>
+                <p>Advanced programming, database systems, software engineering</p>
             </div>
-            <div class="education-card">
-                <div class="education-icon">🎓</div>
-                <h3>BCA (Bachelor of Computer Applications)</h3>
+            <div class="edu-card">
+                <div class="edu-year">2010</div>
+                <div class="edu-icon">🎓</div>
+                <h3>BCA – Bachelor of Computer Applications</h3>
                 <h4>Hemchandracharya North Gujarat University</h4>
-                <p class="year">2010</p>
+                <p>Foundation in computing, algorithms, and database management</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <h3>📧 Email</h3>
-                <p><a href="mailto:ekta.joshi286@gmail.com">ekta.joshi286@gmail.com</a></p>
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="contact-inner">
+            <div class="contact-left">
+                <div class="section-label">Let's Connect</div>
+                <h2 class="contact-heading">Looking for a <em>Power BI Developer</em> or <em>Data Analyst</em> in Mumbai?</h2>
+                <p class="contact-desc">I'm actively open to full-time opportunities in Data Analytics, Business Intelligence, and Power BI Development in Mumbai. Let's talk about how I can add value to your team.</p>
+                <div class="contact-items">
+                    <a href="mailto:ekta.joshi286@gmail.com" class="contact-card">
+                        <div class="cc-icon">📧</div>
+                        <div><strong>Email</strong><span>ekta.joshi286@gmail.com</span></div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ekta-joshi-analyst/" target="_blank" class="contact-card">
+                        <div class="cc-icon">💼</div>
+                        <div><strong>LinkedIn</strong><span>ekta-joshi-data-analyst</span></div>
+                    </a>
+                    <a href="https://github.com/Ekta-Joshi-286" target="_blank" class="contact-card">
+                        <div class="cc-icon">💻</div>
+                        <div><strong>GitHub</strong><span>Ekta-Joshi-286</span></div>
+                    </a>
+                    <div class="contact-card no-link">
+                        <div class="cc-icon">📞</div>
+                        <div><strong>Phone</strong><span>+91 77387 19120</span></div>
+                    </div>
+                    <div class="contact-card no-link">
+                        <div class="cc-icon">📍</div>
+                        <div><strong>Location</strong><span>Mumbai, Maharashtra, India</span></div>
+                    </div>
+                </div>
             </div>
-                       <div class="contact-item">
-                <h3>💼 LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/ekta-joshi-data-analyst/" target="_blank">linkedin.com/in/ekta-joshi-data-analyst</a></p>
-            </div>
-            <div class="contact-item">
-                <h3>💻 GitHub</h3>
-                <p><a href="https://github.com/Ekta-Joshi-286" target="_blank">github.com/Ekta-Joshi-286</a></p>
-            </div>
-            <div class="contact-item">
-                <h3>📍 Location</h3>
-                <p>Mumbai, India</p>
+            <div class="contact-right">
+                <div class="hire-box">
+                    <h3>🚀 Currently Open To</h3>
+                    <ul>
+                        <li>✅ Power BI Developer – Mumbai</li>
+                        <li>✅ Data Analyst – Mumbai</li>
+                        <li>✅ BI Analyst – Mumbai</li>
+                        <li>✅ Reporting Analyst – Mumbai</li>
+                        <li>✅ MIS Analyst – Mumbai</li>
+                    </ul>
+                    <a href="mailto:ekta.joshi286@gmail.com" class="btn-main">Send Me a Message</a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Ekta Joshi</p>
-    </footer>
+<footer>
+    <div class="footer-inner">
+        <span class="footer-logo">EJ<span class="dot">.</span></span>
+        <p>© 2026 Ekta Joshi &middot; Power BI Developer &amp; Data Analyst &middot; Mumbai</p>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+const ham = document.getElementById('hamburger');
+const mob = document.getElementById('mobileMenu');
+ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mob.classList.toggle('open');
+});
+document.querySelectorAll('.mob-link').forEach(l => {
+    l.addEventListener('click', () => {
+        ham.classList.remove('open');
+        mob.classList.remove('open');
+    });
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.tl-item, .proj-card, .proj-small, .edu-card, .skill-list-card, .domain-card, .earlier-item').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id'); });
+    navLinks.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+    });
+});
+</script>
 </body>
 </html>
